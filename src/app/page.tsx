@@ -1,4 +1,4 @@
-import { CodeXml } from "lucide-react";
+import { CodeXml, BriefcaseBusiness } from "lucide-react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 
@@ -79,7 +79,87 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid h-fit max-w-[65vh] grid-cols-1 gap-4"></div>
+          <div className="grid h-fit max-w-[65vh] grid-cols-1 gap-4">
+            <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <h2 className="text-2xl font-semibold leading-none tracking-tight flex flex-row items-center gap-1">
+                  <BriefcaseBusiness className="h-8 w-8 text-indigo-500 mr-1" />
+                  Work
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  Current and previous work experience
+                </p>
+                <ol className="mt-6 space-y-4">
+                  <li className="flex gap-4">
+                    <div className="relative mt-1 flex h-10 w-10 flex-none items-center rounded-full shadow-md">
+                      <Image
+                        src="/images/prorsum.png"
+                        alt="Burberry"
+                        width={50}
+                        height={50}
+                        className="rounded-full"
+                      />
+                    </div>
+                    <dl className="flex flex-auto flex-wrap gap-x-2">
+                      <dd className="w-full flex-none text-sm font-medium">
+                        Burberry
+                      </dd>
+                      <dd className="text-xs text-zinc-400">
+                        Software Engineer
+                      </dd>
+                      <dd className="ml-auto text-xs text-zinc-500">
+                        June 2023 - Present
+                      </dd>
+                    </dl>
+                  </li>
+                  <li className="flex gap-4">
+                    <div className="relative mt-1 flex h-10 w-10 flex-none items-center rounded-full shadow-md">
+                      <Image
+                        src="/images/cmr.png"
+                        alt="Burberry"
+                        width={50}
+                        height={50}
+                        className="rounded-full"
+                      />
+                    </div>
+                    <dl className="flex flex-auto flex-wrap gap-x-2">
+                      <dd className="w-full flex-none text-sm font-medium">
+                        CMR Surgical
+                      </dd>
+                      <dd className="text-xs text-zinc-400">
+                        Software Engineer
+                      </dd>
+                      <dd className="ml-auto text-xs text-zinc-500">
+                        Jan 2023 - May 2023
+                      </dd>
+                    </dl>
+                  </li>
+                  <li className="flex gap-4">
+                    <div className="relative mt-1 flex h-10 w-10 flex-none items-center rounded-full shadow-md">
+                      <Image
+                        src="/images/cmr.png"
+                        alt="Burberry"
+                        width={50}
+                        height={50}
+                        className="rounded-full"
+                      />
+                    </div>
+                    <dl className="flex flex-auto flex-wrap gap-x-2">
+                      <dd className="w-full flex-none text-sm font-medium">
+                        CMR Surgical
+                      </dd>
+                      <dd className="truncate text-xs text-zinc-400">
+                        Graduate Software Engineer
+                      </dd>
+                      <dd className="ml-auto text-xs text-zinc-500">
+                        May 2021 - Jan 2023
+                      </dd>
+                    </dl>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
