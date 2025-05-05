@@ -1,3 +1,5 @@
+import { CodeXml } from "lucide-react";
+import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 export default function Home() {
@@ -41,7 +43,42 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-4 max-md:w-full 2xl:h-fit"></div>
+          <div className="grid grid-cols-1 gap-4 max-md:w-full 2xl:h-fit">
+            <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <h2 className="text-2xl font-semibold leading-none tracking-tight flex flex-row items-center gap-1">
+                  <CodeXml className="h-8 w-8 text-indigo-500 mr-1" />
+                  Experience
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  My experience both commercially and personally in my spare
+                  time
+                </p>
+                <div className="mt-4 grid gap-4 grid-cols-6">
+                  <Icon icon="logos:react" width="34" height="34" />
+                  <Icon icon="logos:vue" width="34" height="34" />
+                  <Icon icon="logos:javascript" width="34" height="34" />
+                  <Icon icon="logos:typescript-icon" width="34" height="34" />
+                  <Icon icon="devicon:html5" width="34" height="34" />
+                  <Icon icon="devicon:css3" width="34" height="34" />
+                  <Icon icon="logos:tailwindcss-icon" width="34" height="34" />
+                  <Icon
+                    icon="vscode-icons:file-type-scss"
+                    width="34"
+                    height="34"
+                  />
+                  <Icon
+                    icon="teenyicons:nextjs-outline"
+                    width="34"
+                    height="34"
+                  />
+                  <Icon icon="logos:python" width="34" height="34" />
+                  <Icon icon="devicon:nodejs" width="34" height="34" />
+                  <Icon icon="lineicons:expressjs" width="34" height="34" />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="grid h-fit max-w-[65vh] grid-cols-1 gap-4"></div>
         </div>
       </div>
